@@ -15,7 +15,7 @@ class Nombre extends Component{
       <form onSubmit={this.handleData}>
           <div className= "row">
             <div className= "form-group col-md-6">
-              <input ref={this.nameRef} type="text" className="form-control form-control-md" placeholder="nombre del cliente"/>
+              <input ref={this.nameRef} type="text" className="form-control form-control-md"  placeholder="nombre del cliente"/>
             </div>
             <div className= "form-group col-md-2">
               <input type="submit" className="btn btn-md btn-danger btn-block" value= "OK"/>

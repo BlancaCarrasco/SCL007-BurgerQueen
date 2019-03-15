@@ -1,32 +1,62 @@
 import React, { Component } from 'react';
+import ReactDOM from "react-dom";
 import Nombre from './Componentes/Nombre';
-import Botones from './Componentes/Botones';
+// import Botones from './Componentes/Botones';
+import {plates} from './plates.json';
+
 
 class App extends Component {
-  state={
-    termino:"cafe"
+  constructor(){
+    super();
+    this.state={
+      plates:plates,
+      toShow:[],
+    
+    }
+    this.showMe= this.showMe.bind(this);
   }
-  searchData= (termino)=> {
+searchData= (termino)=> {
     this.setState({
       ...this.state,
       termino: termino,
     })
   }
 
+
+  
+  showMe(e){
+    console.log(e.currentTarget);   
+    this.setState({
+      ...this.state,
+      toShow: this.state.plates.filter((plates,i)=>{return plates.type==e.currentTarget.id}).map((plates, i)=>{
+        return(
+          <button type="button" className="btn btn-lg btn-warning active">{plates.name}<br/>{plates.cost}</button>
+        )
+      })
+    })
+  }  
+
+  
   render() {
     return (
       <div className="app container">
         <div className= "jumbotron">
         <p className="lead text-center">BurguerQueen</p>
           <Nombre
-          searchData={this.searchData}
+          searchData={this.searchData} 
           />
+           </div>
+          <div>
+          <div className= "row">
+           <div className= "col-md-3">
+          <button  id="desayuno" type="button" className="btn  btn-primary active" onClick={this.showMe}>Desayuno</button></div>
+          <button id="AlmuerzoyCena" type="button" className="btn btn-primary active" onClick={this.showMe}>Almuerzo y Cena</button>
+          <div className= "col-md-12"></div>
+              <br></br>{this.state.toShow} 
+              </div>
+              <div>
+            </div>
           </div>
-          <Botones
-          searchData={this.searchData}
-          />
-          
-        
         {this.state.termino}
       </div>
     );
@@ -44,76 +74,3 @@ export default App;
 
 
 
-// class App extends Component {
-//   constructor(){
-//     super();
-//     this.state={
-//       queHacer: null,
-//       item:[]
-//     }
-
-//   }
-
-  // handleInputChange(event) {
-  //   const name = event.target.name;
-  //   const value = event.target.value;
-  
-  //   this.setState({
-  //     [name]: value,
-  //   });
-  // }
-// class App extends Component {
-//     state={
-//       termino:"cafe"
-//     }
-//     nameData= (termino)=> {
-//       this.setState({
-//         termino
-//       })
-//     }
-//     render() {
-//       return (
-//         <div className="app container">
-//           <div className= "jumbotron">
-//           <p className="lead text-center">Buscador de Imagenes</p>
-//           <Nombre />
-//           // nameData={this.nameData}/>
-//           // </div>
-//           // <h1>hola</h1>
-//           // {this.state.termino}
-//         </div>
-//       );
-//     }
-//   }
-  
-// //   render() {
-// //     return (
-// //       <div className="app container">
-// //         {/* <div className= "jumbotron"> */}
-// //         <p className="lead text-center">BurguerQueen</p><hr/>
-// //         <div>
-// //         {/* <p className="lead text-center">Buscador de Imagenes</p> */}
-// //           <nombre 
-// //           nameData={this.nameData} />
-// //             <div className= "row">
-// //             <input ref={this.nameRef} type="text" className="form-control form-control-lg" placeholder="busca tu imagen. Ejemplo: futbol"/>
-// //             <div className= "form-group col-md-4">
-// //               <input type="submit" className="btn btn-lg btn-danger btn-block" value= "ok"/>
-// //             </div>
-
-// //               {/* <button onClick={this.Desayunos}>Desayunos</button>
-// //               <button onClick={this.Almuerzo}>Almuerzo y Cena</button>
-// //               <button onClick={this.Desayunos}>Cafe americano 500$</button>
-// //               <button onClick={this.Almuerzo}>Cafe con leche 700$</button>
-// //               <button onClick={this.Desayunos}>Sandwich de jamón y queso 1000$</button>
-// //               <button onClick={this.Almuerzo}>Jugo natural 700$</button> */}
-// //             </div>    
-// //         </div>
-// //         {this.state.termino}
-// //       </div>  
-// //     );
-// //   }
-// // }
-
-
-// export default App;

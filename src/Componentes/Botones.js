@@ -6,10 +6,10 @@ class Boton extends Component{
       <form onSubmit={this.handleData}>
           <div className= "row">
           <div className= "form-group col-md-3">
-              <input type="submit" className="btn btn-lg btn-success " value= "desayuno"/>
+              <input type="submit" className="btn btn-lg btn-success " onClick={this.showMe} value= "desayuno"/>
             </div>
             <div className= "form-group col-md-3">
-              <input type="submit" className="btn btn-lg btn-primary " value= "Almuerzo y cena"/>
+              <input type="submit" className="btn btn-lg btn-primary " onClick={this.showMe} value= "Almuerzo y cena"/>
             </div>
             <div className= "form-group col-md-6"></div>
             <div className= "form-group col-md-3">
@@ -34,3 +34,5 @@ class Boton extends Component{
   }
 }
  export default Boton;
+
+ 

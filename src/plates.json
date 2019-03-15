@@ -1,0 +1,250 @@
+{
+
+  "plates":[
+
+{
+
+      "name":"Cafe americano",
+
+      "id":1,
+
+      "type":["desayuno"],
+
+      "cost":"500"
+
+  },
+
+  {
+
+      "name":"Cafe con leche",
+
+      "id":2,
+
+      "type":["desayuno"],
+
+      "cost":"700"
+
+  },
+
+  {
+
+      "name":"Sandwich de jamón y queso",
+
+      "id":3,
+
+      "type":["desayuno"],
+
+      "cost":"1000"
+
+  },
+
+  {
+
+      "name":"Jugo natural",
+
+      "id":4,
+
+      "type":["desayuno"],
+
+      "cost":"700"
+
+  },
+
+
+  {
+
+    "name":"Hamburguesa Simple de res",
+
+    "id":5,
+
+    "type":["AlmuerzoyCena"],
+
+    "cost":"1500"
+
+},
+{
+
+    "name":"Hamburguesa Simple de pollo",
+
+    "id":6,
+
+    "type":["AlmuerzoyCena"],
+
+    "cost":"1500"
+
+},
+
+{
+
+    "name":"Hamburguesa Simple Vegetariana",
+
+    "id":7,
+
+    "type":["AlmuerzoyCena"],
+
+    "cost":"1500"
+
+},
+
+
+  {
+
+      "name":"Hamburguesa Doble de res",
+
+      "id":8,
+
+      "type":["AlmuerzoyCena"],
+
+      "cost":"2500"
+
+  },
+
+  {
+
+    "name":"Hamburguesa Doble de pollo",
+
+    "id":9,
+
+    "type":["AlmuerzoyCena"],
+
+    "cost":"2500"
+
+},
+
+{
+
+    "name":"Hamburguesa Doble de Vegetariana",
+
+    "id":10,
+
+    "type":["AlmuerzoyCena"],
+
+    "cost":"2500"
+
+},
+
+
+  {
+
+      "name":"Papas fritas",
+
+      "id":11,
+
+      "type":["AlmuerzoyCena"],
+
+      "cost":"500",
+
+      "mode":"acompanamiento"
+
+  },
+
+  
+
+  {
+
+      "name":"Onion rings",
+
+      "id":12,
+
+      "type":["AlmuerzoyCena"],
+
+      "cost":"500",
+
+      "mode":"acompanamiento"
+
+  },
+
+  
+
+  {
+
+      "name":"Agua 500ml",
+
+      "id":13,
+
+      "type":["AlmuerzoyCena"],
+
+      "cost":"500",
+
+      "mode":"bebidas"
+
+  },
+
+  
+
+  {
+
+      "name":"Agua 750ml",
+
+      "id":14,
+
+      "type":["AlmuerzoyCena"],
+
+      "cost":"800",
+
+      "mode":"bebidas"
+
+  },
+
+  
+
+  {
+
+      "name":"Gaseosa 500ml",
+
+      "id":15,
+
+      "type":["AlmuerzoyCena"],
+
+      "cost":"700",
+
+      "mode":"bebidas"
+
+  },
+
+  
+
+  {
+
+      "name":"Gaseosa 750ml",
+
+      "id":16,
+
+      "type":["AlmuerzoyCena"],
+
+      "cost":"1000",
+
+      "mode":"bebidas"
+
+  },
+
+  {
+
+    "name":"Extra de queso",
+
+    "id":17,
+
+    "type":["AlmuerzoyCena"],
+
+    "cost":"500",
+
+    "mode":"Extras"
+
+},
+{
+
+    "name":"Extra de huevo",
+
+    "id":18,
+
+    "type":["AlmuerzoyCena"],
+
+    "cost":"500",
+
+    "mode":"Extras"
+
+}
+
+  
+  ]}
+
